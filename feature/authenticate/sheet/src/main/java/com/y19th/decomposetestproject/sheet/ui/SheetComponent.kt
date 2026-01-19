@@ -16,11 +16,11 @@ internal class SheetComponent(
     override fun handleEvent(event: SheetEvents) {
         when (event) {
             SheetEvents.OnNavigateBack -> {
-                storage.handle(SheetEvent.Dismiss)
+                pushStorageEvent(SheetEvent.Dismiss)
             }
 
             SheetEvents.OnConfirmValue -> {
-                storage.handle(SheetEvent.Confirm(state.value.mail))
+                pushStorageEvent(SheetEvent.Confirm(state.value.mail))
             }
 
             is SheetEvents.OnMailChanged -> {

@@ -22,7 +22,7 @@ internal class ForgotPasswordComponent(
             }
 
             ForgotPasswordEvents.OnCallbackExecuted -> {
-                storage.handle(ForgotPasswordBackEvent())
+                pushStorageEvent(ForgotPasswordBackEvent())
                 authenticateNavigator.pop()
             }
         }
