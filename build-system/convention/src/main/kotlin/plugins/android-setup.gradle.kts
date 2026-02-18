@@ -1,6 +1,5 @@
 package plugins
 
-import gradle.kotlin.dsl.accessors._a53a94b6c3a23ac8e834f398567c3b95.android
 import util.AndroidVersions
 
 plugins {
